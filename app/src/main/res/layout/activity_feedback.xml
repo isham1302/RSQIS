@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Feedback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_your_issue"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#87BEF0"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/describe_the_issue"
+            android:inputType="textMultiLine"
+            android:minHeight="30dp"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_the_address"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#87BEF0"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/enter_the_address_of_the_road"
+            android:inputType="textMultiLine"
+            android:minHeight="30dp"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/enter_the_current_location"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/latTextView"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/latitude"/>
+
+        <TextView
+            android:id="@+id/lonTextView"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/longitude"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/upload_proof"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#87BEF0"
+                android:layout_marginTop="50dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                android:id="@+id/proof"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/gallery"
+                        android:src="@drawable/ic_photo_black_24dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from_gallery"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        <Button
+            android:id="@+id/btnupload"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#ffffff"
+            android:background="#87BEF0"
+            android:text="@string/upload"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
